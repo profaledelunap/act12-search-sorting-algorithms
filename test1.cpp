@@ -20,8 +20,8 @@ TEST_CASE("Testing ordering algorithms", "[orderingAlgos]")
     vector<int> vec, vecBubble;
     int compBubble = 0, compInsert = 0, compSelect = 0;
 
-    read(vec, "output1vec.txt");
-    read(vecBubble, "input1vec.txt");
+    read(vec, "files/output1vec.txt");
+    read(vecBubble, "files/input1vec.txt");
     vector<int> vecInsert(vecBubble);
     vector<int> vecSelect(vecBubble);
 

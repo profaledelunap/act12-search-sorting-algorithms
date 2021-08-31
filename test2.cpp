@@ -21,14 +21,14 @@ TEST_CASE("Testing searching algorithms", "[searchAlgos]")
     int compSeq, compSearch, compRSearch;
     int index1, index2, index3;
 
-    read(values, "input1search.txt");
-    read(vec, "output1vec.txt");
+    read(values, "files/input1search.txt");
+    read(vec, "files/output1vec.txt");
 
-    read(indices, "indices1search.txt");
+    read(indices, "files/indices1search.txt");
 
-    read(compSeqRes, "outpust1searchSeq.txt");
-    read(compSearchRes, "outpust1searchBinary.txt");
-    read(compRSearchRes, "outpust1searchBinaryR.txt");
+    read(compSeqRes, "files/outpust1searchSeq.txt");
+    read(compSearchRes, "files/outpust1searchBinary.txt");
+    read(compRSearchRes, "files/outpust1searchBinaryR.txt");
 
     for (int i = 0; i < values.size(); i++)
     {

@@ -34,7 +34,7 @@ TEST_CASE("Testing ordering algorithms", "[orderingAlgos]")
     SECTION("Number of comparisons")
     {
         REQUIRE(compBubble == 73829);
-        REQUIRE(compInsert == 384);
+        REQUIRE(compInsert == 37107);
         REQUIRE(compSelect == 73920);
     }
     SECTION("Ordered vectors")

@@ -12,40 +12,14 @@
 #ifndef BUBBLE_H
 #define BUBBLE_H
 
-#include "header.h"
-#include <vector>
-
 // =================================================================
-// Performs the bubble sort algorithm on an array
+// Realiza el ordenamiento de burbuja sobre un vector.
 //
-// @param A, an array of T elements.
-// @param size, the number of elements in the array.
+// @param v, un vector de elementos de tipo T.
 // =================================================================
 template <class T>
-void bubbleSort(T *arr, int size) {
-	for(int i = size - 1; i > 0; i--){
-		for(int j = 0; j < i; j++){
-			if(arr[j] > arr[j + 1]){
-				swap(arr, j, j + 1);
-			}
-		}
-	}
-}
-
-// =================================================================
-// Performs the bubble sort algorithm on an vector.
-//
-// @param v, a vector of T elements.
-// =================================================================
-template <class T>
-void bubbleSort(std::vector<T> &v) {
-	for(int i = v.size() - 1; i > 0; i--){
-		for(int j = 0; j < i; j++){
-			if(v[j] > v[j + 1]){
-				swap(v, j, j + 1);
-			}
-		}
-	}
+void bubbleSort(std::vector<T> &v, int &comp)
+{
 }
 
 #endif /* BUBBLE_H */

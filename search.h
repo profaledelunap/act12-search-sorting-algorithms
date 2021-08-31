@@ -16,76 +16,48 @@
 #include <vector>
 
 // =================================================================
-// Performs a sequential search for an element within a vector.
+// Realiza la búsqueda secuencial de un elemento dentro un vector.
 //
-// @param A, a vector of T elements.
-// @param key, the element to search.
-// @return the index of the searched element, -1 in case the element
-//		   is not found in the vector.
+// @param v, un vector de elementos tipo T.
+// @param key, el elemento a buscar.
+// @return el índice del elemento siendo buscado, -1 en caso de que
+//		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int sequentialSearch(const std::vector<T> &v, T key) {
-	for (int i = 0; i < v.size(); i++) {
-		if (v[i] == key) {
-			return i;
-		}
-	}
-	return -1;
+int sequentialSearch(const std::vector<T> &v, T key, int &comp)
+{
+	return 0;
 }
 
 // =================================================================
-// Performs a binary search for an element within a vector
+// Realiza la búsqueda binari de un elemento dentro un vector.
 //
-// @param A, a vector of T elements.
-// @param key, the element to search.
-// @return the index of the searched element, -1 in case the element
-//		   is not found in the vector.
+// @param v, un vector de elementos tipo T.
+// @param key, el elemento a buscar.
+// @return el índice del elemento siendo buscado, -1 en caso de que
+//		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int binarySearch(const std::vector<T> &v, T key) {
-	int low, high, mid;
-
-	low = 0;
-	high = v.size() - 1;
-	while (low <= high) {
-		mid = low + ((high - low) / 2); // mid = (high + low) / 2;
-		if (key == v[mid]) {
-			return mid;
-		} else if (key < v[mid]) {
-			high = mid - 1;
-		} else {
-			low = mid + 1;
-		}
-	}
-	return -1;
+int binarySearch(const std::vector<T> &v, T key, int &comp)
+{
+	return 0;
 }
 
 // =================================================================
-// Performs a binary search for an element within a vector
+// Realiza la búsqueda binaria recursiva de un elemento dentro un
+// vector.
 //
-// @param A, a vector of T elements.
-// @param low, lower limit of the search.
-// @param high, upper limit of the search.
-// @param key, the element to search.
-// @return the index of the searched element, -1 in case the element
-//		   is not found in the vector.
+// @param v, un vector de elementos tipo T.
+// @param low, limite inferior de la búsqueda.
+// @param high, limite superior de la búsqueda.
+// @param key, el elemento a buscar.
+// @return el índice del elemento siendo buscado, -1 en caso de que
+//		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int binaryRSearch(const std::vector<T> &v, int low, int high, T key) {
-	int mid;
-
-	if (low > high) {
-		return -1;
-	} else {
-		mid = low + ((high - low) / 2); // mid = (high + low) / 2;
-		if (key == v[mid]) {
-			return mid;
-		} else if (key < v[mid]) {
-			return binaryRSearch(v, low, mid - 1, key);
-		} else {
-			return binaryRSearch(v, mid + 1, high, key);
-		}
-	}
+int binaryRSearch(const std::vector<T> &v, int low, int high, T key, int &comp)
+{
+	return 0;
 }
 
 #endif /* SEARCH_H */

@@ -12,24 +12,16 @@
 #ifndef INSERTION_H
 #define INSERTION_H
 
-// =================================================================
-// Performs the insertion sort algorith on an array.
-//
-// @param A, an array of T elements.
-// @param size, the number of elements in the array.
-// =================================================================
-template <class T>
-void insertionSort(T *arr, int size, int &comp)
-{
-}
+#include <vector>
+using namespace std;
 
 // =================================================================
-// Performs the insertion sort algorith on a vector.
+// Realiza un ordenamiento por inserción de un vector.
 //
-// @param A, a vector of T elements.
+// @param v, un vector de elementos tipo T.
 // =================================================================
 template <class T>
-void insertionSort(std::vector<T> &v, int &comp)
+void insertionSort(vector<T> &v, int &comp)
 {
 }
 

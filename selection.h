@@ -13,6 +13,7 @@
 #define SELECTION_H
 
 #include <vector>
+using namespace std;
 
 // =================================================================
 // Realiza el ordenamiento de un vector de manera ascendente.
@@ -20,7 +21,7 @@
 // @param v, un vector de elementos tipo T.
 // =================================================================
 template <class T>
-void selectionSort(std::vector<T> &v, int &comp)
+void selectionSort(vector<T> &v, int &comp)
 {
 }
 

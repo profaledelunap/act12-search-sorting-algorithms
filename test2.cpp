@@ -10,42 +10,10 @@
 #include <fstream>
 #include <vector>
 #include "catch.h"
-#include "bubble.h"
-#include "insertion.h"
-#include "selection.h"
 #include "search.h"
 #include "vectorExtras.h"
 
 using namespace std;
-
-TEST_CASE("Testing ordering algorithms", "[orderingAlgos]")
-{
-    vector<int> vec, vecBubble;
-    int compBubble = 0, compInsert = 0, compSelect = 0;
-
-    read(vec, "output1vec.txt");
-    read(vecBubble, "input1vec.txt");
-    vector<int> vecInsert(vecBubble);
-    vector<int> vecSelect(vecBubble);
-
-    bubbleSort(vecBubble, compBubble);
-    insertionSort(vecInsert, compInsert);
-    selectionSort(vecSelect, compSelect);
-
-    SECTION("Number of comparisons")
-    {
-        REQUIRE(compBubble == 73829);
-        REQUIRE(compInsert == 384);
-        REQUIRE(compSelect == 73920);
-    }
-    SECTION("Ordered vectors")
-    {
-        REQUIRE(vec == vecBubble);
-        REQUIRE(vec == vecInsert);
-        REQUIRE(vec == vecSelect);
-    }
-}
-
 TEST_CASE("Testing searching algorithms", "[searchAlgos]")
 {
     vector<int> vec, values, indices;

@@ -12,8 +12,8 @@
 #ifndef SEARCH_H
 #define SEARCH_H
 
-#include "header.h"
 #include <vector>
+using namespace std;
 
 // =================================================================
 // Realiza la búsqueda secuencial de un elemento dentro un vector.
@@ -24,7 +24,7 @@
 //		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int sequentialSearch(const std::vector<T> &v, T key, int &comp)
+int sequentialSearch(const vector<T> &v, T key, int &comp)
 {
 	return 0;
 }
@@ -38,7 +38,7 @@ int sequentialSearch(const std::vector<T> &v, T key, int &comp)
 //		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int binarySearch(const std::vector<T> &v, T key, int &comp)
+int binarySearch(const vector<T> &v, T key, int &comp)
 {
 	return 0;
 }
@@ -55,7 +55,7 @@ int binarySearch(const std::vector<T> &v, T key, int &comp)
 //		   no se encuentre el elemento.
 // =================================================================
 template <class T>
-int binaryRSearch(const std::vector<T> &v, int low, int high, T key, int &comp)
+int binaryRSearch(const vector<T> &v, int low, int high, T key, int &comp)
 {
 	return 0;
 }

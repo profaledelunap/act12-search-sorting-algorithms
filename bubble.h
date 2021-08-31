@@ -12,13 +12,16 @@
 #ifndef BUBBLE_H
 #define BUBBLE_H
 
+#include <vector>
+using namespace std;
+
 // =================================================================
 // Realiza el ordenamiento de burbuja sobre un vector.
 //
 // @param v, un vector de elementos de tipo T.
 // =================================================================
 template <class T>
-void bubbleSort(std::vector<T> &v, int &comp)
+void bubbleSort(vector<T> &v, int &comp)
 {
 }
 

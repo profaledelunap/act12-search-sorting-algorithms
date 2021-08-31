@@ -1,4 +1,4 @@
-all: clean
+all: clean test1 test2
 
 test1:
 	g++ -std=c++11 test1.cpp -o test1
@@ -7,7 +7,6 @@ test1:
 test2:
 	g++ -std=c++11 test1.cpp -o test2
 	./test2
-
 
 clean:
 ifneq ("$(wildcard ./test1)","")

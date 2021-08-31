@@ -10,9 +10,7 @@
 #include <fstream>
 #include <vector>
 #include "catch.h"
-#include "bubble.h"
-#include "insertion.h"
-#include "selection.h"
+#include "sort.h"
 #include "vectorExtras.h"
 
 using namespace std;
@@ -34,7 +32,7 @@ TEST_CASE("Testing ordering algorithms", "[orderingAlgos]")
     SECTION("Number of comparisons")
     {
         REQUIRE(compBubble == 73829);
-        REQUIRE(compInsert == 384);
+        REQUIRE(compInsert == 37107);
         REQUIRE(compSelect == 73920);
     }
     SECTION("Ordered vectors")

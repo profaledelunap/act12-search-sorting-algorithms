@@ -14,7 +14,7 @@ En los archivos "test1.cpp" y "test2.cpp, deberás colocar en la parte superior,
 // =========================================================
 ```
 
-Implementa, <span style="text-decoration: underline;">forma individual</span>, los algoritmos de busqueda y ordenamiento vistos en clase. Modficia los archivos "search.h", "bubble.h", "selection.h", "insertion.h" con tu implementación. Para cada algoritmo, cuenta la cantidad de comparaciones que se realizan. En el caso de los algoritmos de búsqueda, los algoritmos deberan de regresar la posición donde se encuentra el valor en un arreglo ordenado (-1 en caso de que no se encuentre) y la cantidad de comparaciones que realizadas.
+Implementa, <span style="text-decoration: underline;">forma individual</span>, los algoritmos de búsqueda y ordenamiento vistos en clase. Modficia los archivos "search.h" y "sort.h" con tu implementación. Para cada algoritmo, cuenta la cantidad de comparaciones que se realizan. En el caso de los algoritmos de búsqueda, deberas regresar el índice en el que se encuentra el valor buscado en un arreglo ordenado (-1 en caso de que no se encuentre).
 
 Para probar tu implementación de los algoritmos de ordenamiento, compila tu programa con el comando:
 
@@ -22,13 +22,13 @@ Para probar tu implementación de los algoritmos de ordenamiento, compila tu pro
 make test1
 ```
 
-Para probar tu implementación de los algoritmos de busqueda, compila tu programa con el comando:
+Para probar tu implementación de los algoritmos de búsqueda, compila tu programa con el comando:
 
 ```
 make test2
 ```
 
-Para probar tu implementación de los algoritmos de ordenamiento y busqueda, compila tu programa con el comando:
+Para probar tu implementación de los algoritmos de ordenamiento y búsqueda, compila tu programa con el comando:
 
 ```
 make
